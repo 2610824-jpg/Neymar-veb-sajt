@@ -1,0 +1,149 @@
+/* Opšti stil sajta */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #fff;
+color: #000;
+}
+
+/* HEADER sa slikom preko celog header-a */
+.header {
+width: 100%;
+height: 300px; /* visina header-a */
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUU0da7aUaYkeQrHPGdFYWvedaUPUVdzMtKg&s");
+background-size: auto; /* slika pokriva ceo prostor */
+background-position: center;
+display: flex;
+justify-content: center; /* horizontalno centriranje */
+align-items: center; /* vertikalno centriranje */
+color: black;
+text-align: center;
+}
+
+.header h1 {
+font-size: 36px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* bolja vidljivost preko slike */
+margin: 0;
+text-align: center;
+color: white;
+}
+
+/* NAVBAR */
+nav {
+background-color: #000; /* crna */
+padding: 15px 0;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline-block;
+margin: 0 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* GLAVNI SADRŽAJ */
+main {
+padding: 50px;
+}
+
+.main-box {
+display: flex;
+align-items: flex-start;
+}
+
+.main-box img {
+width: 180px;
+margin-right: 20px;
+border-radius: 10px;
+}
+
+ul {
+font-size: 18px;
+}
+/* Biografija – slika sa tekstom oko */
+.biography img {
+shape-image-threshold: circle; /* slika levo, tekst oko nje */
+width: 250px;
+margin-left: 40%;
+border-radius: 10px;
+}
+
+.biography p {
+text-align: justify;
+text-align: justify;
+line-height: 2;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+.klubovi {
+display: flex; 
+justify-content: space-between;
+align-items: center; 
+margin-top: 20px;
+}
+
+.klubovi a img {
+width: 170px;
+height: auto;
+transition: transform 0.3s; 
+}
+
+.klubovi a img:hover {
+transform: scale(2); 
+}
+p{
+  margin: 10px;
+}
+/* Slika kluba/Nejmara u glavnom delu */
+.club-image {
+float: right; /* slika desno */
+width: 200px;
+margin: 0 0 20px 20px;
+border-radius: 10px;
+}
+
+/* Lista detalja kluba */
+.club-details {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+/* Tabela statistike */
+table {
+border-collapse: collapse;
+width: 50%;
+margin-bottom: 20px;
+}
+
+table, th, td {
+border: 1px solid #000;
+}
+
+th, td {
+padding: 15px;
+text-align: center;
+}
+
+/* Lista trofeja */
+.trophies {
+font-size: 18px;
+list-style-type: disc;
+margin-left: 20px;
+}
